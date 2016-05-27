@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h1 Basic Tutorials
+  section.css-table
+    section.two-column
+      section.cell
+        h2 What is Mortgage Backed Securities(MBS)?
+        p A mortgage-backed security (MBS) is a type of asset-backed security that is secured by a mortgage or collection of mortgages. The mortgages are sold to a group of individuals (a government agency or investment bank) that securitizes, or packages, the loans together into a security that investors can buy. The mortgages of an MBS may be residential or commercial, depending on whether it is an Agency MBS or a Non-Agency MBS.
+        p In the United States they may be issued by structures set up by government-sponsored enterprises like Fannie Mae or Freddie Mac, or they can be "private-label", issued by structures set up by investment banks. The structure of the MBS may be known as "pass-through", where the interest and principal payments from the borrower or homebuyer pass through it to the MBS holder, or it may be more complex, made up of a pool of other MBSs. Other types of MBS include collateralized mortgage obligations (CMOs, often structured as real estate mortgage investment conduits) and collateralized debt obligations (CDOs).
+      section.cell
+        h2 How does Agency Mortgage Backed Securities work?
+        p There are millions of residential mortgages – you may have one yourself. While in some cases banks directly lend the money of the depositors, a large portion of time they don’t. Instead, they sell the mortgages to a government agency (GNMA) or quasi governmental agency (Fannie Mae or Freddie Mac). Those agencies package thousands of similar loans together and then sell them to public in the form bonds which are known as agency mortgage backed securities.
+        p The bonds themselves are supported by the mortgage payments. Unlike most other types of bonds, typically borrowers pay back both principal and interest through monthly payments. There is no lump-sum distributed at maturity. In the case of an agency MBS, the interest and principal payments are guaranteed by the agency issuing the bond. For all practical purposes, the default risk is negligible.
+    section.two-column
+      section.cell
+        h3 Conditional Prepayment Rate(CPR)
+        p CPR is the annualized percentage of the existing mortgage pool that is expected to be prepaid in a year. This assumes a constant rate for prepayment, i.e., after every coupon, a constant percentage of the mortgages will be prepaid. This is also called the Constant Mortgage Mortality (CMM).
+        p For example, if CPR is 8%, then the investor can expect 8% of the mortgages within the security pool to be prepaid within the year.
+        p CPR is estimated based on various factors such as the characteristics of the underlying pool, historical prepayment rates and future predictions.
+      section.cell
+        h3 Single Monthly Mortality Rate(SMM)
+        p CPR is an annual rate. However, since the mortgage payments happen monthly, we need to calculate the monthly prepayment rate. SMM is a measure of the monthly mortgage prepayment rate of the security’s mortgage pool.
+        h3 Relationship between SMM and CPR
+        p SMM = 1 – (1 – CPR)^(1/12)
+        p CPR = 1 – (1 – SMM)^12
+
